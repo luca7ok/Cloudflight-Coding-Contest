@@ -2,12 +2,12 @@ import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-filename_level_1 = "all_data_from_level_1.in"
+filename_weather = "all_data_from_level_1.in"
 filename_a = "level_2_a.in"
 filename_b = "level_2_b.in"
 filename_c = "level_2_c.in"
 
-df_weather = pd.read_csv(filename_level_1, sep=",")
+df_weather = pd.read_csv(filename_weather, sep=",")
 
 is_fahrenheit = df_weather["Temperature [°C]"] > 55
 
